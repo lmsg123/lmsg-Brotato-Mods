@@ -34,7 +34,7 @@ ModLoader: 6.2.0+
 Steam 创意工坊 (ID: 3804981251)
 https://steamcommunity.com/sharedfiles/filedetails/?id=3804981251
 
-GitHub：待补充 / TBD
+GitHub：https://github.com/lmsg123/lmsg-Brotato-Mods
 
 前置 ModOptions
 https://steamcommunity.com/sharedfiles/filedetails/?id=3598984651
