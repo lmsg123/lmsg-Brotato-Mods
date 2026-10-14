@@ -1,0 +1,15 @@
+{
+  "name": "DangerousBunnyReroll",
+  "namespace": "lmsg",
+  "version_number": "1.0.0",
+  "description": "Quadratic Dangerous Bunny reroll chance while preserving vanilla exclusions, locks and shop guarantees.",
+  "website_url": "",
+  "dependencies": [],
+  "extra": {
+    "godot": {
+      "authors": ["lmsg"],
+      "incompatibilities": [],
+      "compatible_mod_loader_version": ["6.3.0"]
+    }
+  }
+}
