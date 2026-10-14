@@ -67,12 +67,15 @@ func _try_add_bunny(player_index: int, locked_count: int, previous_items: Array,
 
 	var price = ItemService.get_value(RunData.current_wave, bunny.value, player_index, true, false, bunny.my_id_hash)
 	var chance = BunnyRules.additional_chance(paid_cost, price)
-	if chance <= 0.0 or (chance < 1.0 and randf() >= chance):
+	if not _bunny_should_add(chance):
 		return
 	var index = candidates[randi() % candidates.size()]
 	# Reuse vanilla DLC effect updates and the standard [resource, wave] pair.
 	var offered_bunny = ItemService.apply_item_effect_modifications(bunny, player_index)
 	shop[index] = [offered_bunny, RunData.current_wave]
+
+func _bunny_should_add(chance: float) -> bool:
+	return chance > 0.0 and randf() < chance
 
 func _minimum_weapon_count(player_index: int) -> int:
 	if not RunData.player_has_weapon_slots(player_index):

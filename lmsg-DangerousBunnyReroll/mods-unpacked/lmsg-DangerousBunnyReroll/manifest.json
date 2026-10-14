@@ -1,8 +1,8 @@
 {
   "name": "DangerousBunnyReroll",
   "namespace": "lmsg",
-  "version_number": "1.0.0",
-  "description": "Quadratic Dangerous Bunny reroll chance while preserving vanilla exclusions, locks and shop guarantees.",
+  "version_number": "1.1.0",
+  "description": "Unlimited Dangerous Bunnies with a quadratic paid-reroll supplement capped at 50%, preserving vanilla exclusions, locks and shop rules.",
   "website_url": "",
   "dependencies": [],
   "extra": {

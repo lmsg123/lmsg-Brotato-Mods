@@ -2,14 +2,15 @@ extends Reference
 
 const BUNNY_ID = "item_dangerous_bunny"
 const COST_THRESHOLD = 20
+const MAX_ADDITIONAL_CHANCE = 0.5
 
 static func additional_chance(paid_cost: int, item_price: int) -> float:
 	if paid_cost <= COST_THRESHOLD:
 		return 0.0
 	if item_price <= COST_THRESHOLD:
-		return 1.0
+		return MAX_ADDITIONAL_CHANCE
 	var progress = clamp(float(paid_cost - COST_THRESHOLD) / float(item_price - COST_THRESHOLD), 0.0, 1.0)
-	return progress * progress
+	return MAX_ADDITIONAL_CHANCE * progress * progress
 
 static func contains_bunny(shop: Array) -> bool:
 	for entry in shop:
